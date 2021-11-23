@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="icon" type="image/png" href="images/icons/circle-cropped.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="back">
+  <div class="backRight"></div>
+  <div class="backLeft"></div>
+</div>
+
+<div id="slideBox">
+  <div class="topLayer">
+    <div class="left">
+      <div class="content">
+        <h2>Sign Up</h2>
+        <form name="signuppage" method="post" action="add_user.php">
+          <div class="form-group">
+            Username <input name="signupuser" class="form-label" type="text" placeholder="username" required>
+            Password <input name="signuppass" class="form-label" type="password" required>
+          </div>
+          <!--<div class="form-group"></div>-->
+          <!--<div class="form-group"></div>-->
+          <!--<div class="form-group"></div>-->
+        <button id="goLeft" class="off" onclick = "return false;">Login</button>
+        <button name="signup" type=signup>Sign up</button>
+        </form>
+      </div>
+    </div>
+    <div class="right">
+      <div class="content">
+        <h2>Login</h2>
+        <form name="signinpage" method="post" action="signin_validation.php">
+          <div class="form-group">
+            Username <input name="loginuser" class="form-label" type="text" placeholder="username">
+            Password <input name="loginpass" class="form-label" type="password">
+            <!--<input type="text" />-->
+          </div>
+          <button id="goRight" class="off" onclick = "return false;">Sign Up</button>
+          <button name="login" type=login>Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<script>-->
+<!--function signInValidation() {-->
+<!--    var user = document.getElementById('loginuser').value;-->
+<!--    var pass = document.getElementById('loginpass').value;-->
+<!--        if (user == 'abdu' && pass=='cs411') {-->
+<!--            alert("login successful!");-->
+<!--            window.location.replace("https://stockanalysis.web.illinois.edu/add_portfolio.php");-->
+<!--            return false;-->
+<!--        }else{-->
+<!--            alert("credentials invalid, please try again");-->
+<!--            window.location.replace("https://stockanalysis.web.illinois.edu");-->
+<!--            document.forms["signinpage"].reset();    -->
+<!--            return false;-->
+<!--        }-->
+<!--}-->
+<!--function signUpValidation() {-->
+<!--    window.location.replace("https://stockanalysis.web.illinois.edu/add_user.php");-->
+<!--    window.location.replace("https://stockanalysis.web.illinois.edu");-->
+<!--    return false;-->
+<!--}-->
+
+<!--</script>-->
+
+<!--Inspiration from: http://ertekinn.com/loginsignup/-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
