@@ -1,0 +1,2 @@
+[03-Nov-2020 19:33:11 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbserver' (T_VARIABLE) in /home/stockanalysis/public_html/includes/dbconn.php on line 3
+[03-Nov-2020 19:33:13 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbserver' (T_VARIABLE) in /home/stockanalysis/public_html/includes/dbconn.php on line 3
